@@ -529,7 +529,7 @@
           "Microsoft.NETCore.DotNetAppHost": "2.2.0"
         }
       },
-      "Microsoft.NETCore.Platforms/2.2.0": {
+      "Microsoft.NETCore.Platforms/3.0.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -565,29 +565,30 @@
           }
         }
       },
-      "MySql.Data/8.0.18": {
+      "MySql.Data/8.0.19": {
         "type": "package",
         "dependencies": {
           "BouncyCastle.NetCore": "1.8.3",
           "Google.Protobuf": "3.6.1",
           "SSH.NET": "2016.1.0",
           "System.Configuration.ConfigurationManager": "4.4.1",
-          "System.Resources.Extensions": "4.6.0-preview8.19405.3",
-          "System.Security.Permissions": "4.4.1",
+          "System.Security.Permissions": "4.6.0",
           "System.Text.Encoding.CodePages": "4.4.0"
         },
         "compile": {
-          "lib/netstandard2.0/MySql.Data.dll": {}
+          "lib/netstandard2.0/MySql.Data.dll": {},
+          "lib/netstandard2.0/Ubiety.Dns.Core.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/MySql.Data.dll": {}
+          "lib/netstandard2.0/MySql.Data.dll": {},
+          "lib/netstandard2.0/Ubiety.Dns.Core.dll": {}
         }
       },
-      "MySql.Data.EntityFrameworkCore/8.0.18": {
+      "MySql.Data.EntityFrameworkCore/8.0.19": {
         "type": "package",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "2.1.2",
-          "MySql.Data": "8.0.18"
+          "MySql.Data": "8.0.19"
         },
         "compile": {
           "lib/netstandard2.0/MySql.Data.EntityFrameworkCore.dll": {}
@@ -1606,15 +1607,6 @@
           "lib/netstandard1.5/System.Reflection.TypeExtensions.dll": {}
         }
       },
-      "System.Resources.Extensions/4.6.0-preview8.19405.3": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/System.Resources.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Resources.Extensions.dll": {}
-        }
-      },
       "System.Resources.ResourceManager/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1772,11 +1764,11 @@
           "lib/netstandard1.3/System.Runtime.Serialization.Xml.dll": {}
         }
       },
-      "System.Security.AccessControl/4.5.0": {
+      "System.Security.AccessControl/4.6.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.0.0",
-          "System.Security.Principal.Windows": "4.5.0"
+          "Microsoft.NETCore.Platforms": "3.0.0",
+          "System.Security.Principal.Windows": "4.6.0"
         },
         "compile": {
           "ref/netstandard2.0/System.Security.AccessControl.dll": {}
@@ -2041,10 +2033,10 @@
           }
         }
       },
-      "System.Security.Permissions/4.5.0": {
+      "System.Security.Permissions/4.6.0": {
         "type": "package",
         "dependencies": {
-          "System.Security.AccessControl": "4.5.0"
+          "System.Security.AccessControl": "4.6.0"
         },
         "compile": {
           "ref/netstandard2.0/System.Security.Permissions.dll": {}
@@ -2065,10 +2057,10 @@
           "lib/netstandard1.0/System.Security.Principal.dll": {}
         }
       },
-      "System.Security.Principal.Windows/4.5.0": {
+      "System.Security.Principal.Windows/4.6.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.0.0"
+          "Microsoft.NETCore.Platforms": "3.0.0"
         },
         "compile": {
           "ref/netstandard2.0/System.Security.Principal.Windows.dll": {}
@@ -2077,11 +2069,11 @@
           "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
         },
         "runtimeTargets": {
-          "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll": {
+          "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "assetType": "runtime",
             "rid": "unix"
           },
-          "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll": {
+          "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -2367,13 +2359,13 @@
       },
       "ITRI.Models/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
+        "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "Dapper": "2.0.30",
           "Dapper.Contrib": "2.0.30",
           "Microsoft.EntityFrameworkCore": "2.2.1",
           "Microsoft.EntityFrameworkCore.Design": "2.2.1",
-          "MySql.Data.EntityFrameworkCore": "8.0.18",
+          "MySql.Data.EntityFrameworkCore": "8.0.19",
           "System.IdentityModel.Tokens.Jwt": "5.3.0"
         },
         "compile": {
@@ -3197,17 +3189,17 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.Platforms/2.2.0": {
-      "sha512": "39+GVHdbm+cmoOjdvm+fhiMbddnuVyUlBdYS8Yhn5xsNaBoTXpgBsxQQlI2Sv9EjIP0F+itG6yrDaOM2OEGupQ==",
+    "Microsoft.NETCore.Platforms/3.0.0": {
+      "sha512": "/pOb3Gn793O5UMdxIpKQH0iRJO40z9q1M1Ik3GjBlC+Ot9tU06THN6PsB+By+iTiTgt9lo5bC4mj2k7KOBZlRw==",
       "type": "package",
-      "path": "microsoft.netcore.platforms/2.2.0",
+      "path": "microsoft.netcore.platforms/3.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.2.2.0.nupkg.sha512",
+        "microsoft.netcore.platforms.3.0.0.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json",
         "useSharedDesignerContext.txt",
@@ -3250,27 +3242,33 @@
         "version.txt"
       ]
     },
-    "MySql.Data/8.0.18": {
-      "sha512": "NHJzaIWgqWkDMQCU7lmRMJtqTLHO3Mici5ktnZJiiS8oieMGtVm6KWuUuC9M6WJw6dJbIRSoVr8uxwVeKm6wgg==",
+    "MySql.Data/8.0.19": {
+      "sha512": "UI03m/+hIj4x9WjPTRM3H4GdD30XKyuICxjozrIXRBjlm1jAZZu/ysVvZ9WAuwEA9URB4DJO/hkNaDEVBklWGg==",
       "type": "package",
-      "path": "mysql.data/8.0.18",
+      "path": "mysql.data/8.0.19",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net452/MySql.Data.dll",
         "lib/net452/MySql.Data.xml",
+        "lib/net452/Ubiety.Dns.Core.dll",
+        "lib/net48/MySql.Data.dll",
+        "lib/net48/MySql.Data.xml",
+        "lib/net48/Ubiety.Dns.Core.dll",
         "lib/netstandard2.0/MySql.Data.dll",
         "lib/netstandard2.0/MySql.Data.xml",
+        "lib/netstandard2.0/Ubiety.Dns.Core.dll",
         "lib/netstandard2.1/MySql.Data.dll",
         "lib/netstandard2.1/MySql.Data.xml",
-        "mysql.data.8.0.18.nupkg.sha512",
+        "lib/netstandard2.1/Ubiety.Dns.Core.dll",
+        "mysql.data.8.0.19.nupkg.sha512",
         "mysql.data.nuspec"
       ]
     },
-    "MySql.Data.EntityFrameworkCore/8.0.18": {
-      "sha512": "wyefbLJcyyMwSC70ilfPkLOFLFr+aNkv2WMJBzrHxO/q5kx6qbbdE0xO6H0hxfqdg6ekvGdFkF9YPsOnrsYMBA==",
+    "MySql.Data.EntityFrameworkCore/8.0.19": {
+      "sha512": "ZgewlvkL6CASQQuPbwTfYFkLcdRfCi2uV29aDW2kiQ3U26IGIYf5enQUkbfH3hXnZw2x0do767vY/Lv9hJButg==",
       "type": "package",
-      "path": "mysql.data.entityframeworkcore/8.0.18",
+      "path": "mysql.data.entityframeworkcore/8.0.19",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3280,7 +3278,7 @@
         "lib/net461/MySql.Data.EntityFrameworkCore.xml",
         "lib/netstandard2.0/MySql.Data.EntityFrameworkCore.dll",
         "lib/netstandard2.0/MySql.Data.EntityFrameworkCore.xml",
-        "mysql.data.entityframeworkcore.8.0.18.nupkg.sha512",
+        "mysql.data.entityframeworkcore.8.0.19.nupkg.sha512",
         "mysql.data.entityframeworkcore.nuspec"
       ]
     },
@@ -5948,24 +5946,6 @@
         "system.reflection.typeextensions.nuspec"
       ]
     },
-    "System.Resources.Extensions/4.6.0-preview8.19405.3": {
-      "sha512": "29RnS00W/s9B9LijacmdarAKsUDMn7GoAU90eEQSsofNHISdbAhbaJzxaofaIPpLcGxI8JtpErOMHEqMNO42pA==",
-      "type": "package",
-      "path": "system.resources.extensions/4.6.0-preview8.19405.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netstandard2.0/System.Resources.Extensions.dll",
-        "lib/netstandard2.0/System.Resources.Extensions.xml",
-        "ref/netstandard2.0/System.Resources.Extensions.dll",
-        "system.resources.extensions.4.6.0-preview8.19405.3.nupkg.sha512",
-        "system.resources.extensions.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "System.Resources.ResourceManager/4.3.0": {
       "sha512": "Tg6n+5fflqBNbZ7z6sVJbLdfx0UK646iAvK5X2ZqSAQ2uXmR89+zijQsUJhrk8CTvvqDytX3rBB4PXH8MyU20Q==",
       "type": "package",
@@ -6608,10 +6588,10 @@
         "system.runtime.serialization.xml.nuspec"
       ]
     },
-    "System.Security.AccessControl/4.5.0": {
-      "sha512": "6RQtcT+TyDgLUFsAnmmdfRRGdLYKxSZGkSPOd052tvYFxOTMaQb6ANlwhGqZtNO52PosaCoXu7uatFneujAxmA==",
+    "System.Security.AccessControl/4.6.0": {
+      "sha512": "Vsby2fY+L5wYZ1SPODYqCw+2nml/kw2gdWOa6ENdJMspx8qkmmqpVLnV5fTOr621JVk1xz92NjXKmj0mmokxjQ==",
       "type": "package",
-      "path": "system.security.accesscontrol/4.5.0",
+      "path": "system.security.accesscontrol/4.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6619,8 +6599,10 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net46/System.Security.AccessControl.dll",
         "lib/net461/System.Security.AccessControl.dll",
+        "lib/net461/System.Security.AccessControl.xml",
         "lib/netstandard1.3/System.Security.AccessControl.dll",
         "lib/netstandard2.0/System.Security.AccessControl.dll",
+        "lib/netstandard2.0/System.Security.AccessControl.xml",
         "lib/uap10.0.16299/_._",
         "ref/net46/System.Security.AccessControl.dll",
         "ref/net461/System.Security.AccessControl.dll",
@@ -6641,10 +6623,12 @@
         "ref/uap10.0.16299/_._",
         "runtimes/win/lib/net46/System.Security.AccessControl.dll",
         "runtimes/win/lib/net461/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net461/System.Security.AccessControl.xml",
         "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.xml",
         "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll",
         "runtimes/win/lib/uap10.0.16299/_._",
-        "system.security.accesscontrol.4.5.0.nupkg.sha512",
+        "system.security.accesscontrol.4.6.0.nupkg.sha512",
         "system.security.accesscontrol.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -6965,22 +6949,28 @@
         "system.security.cryptography.x509certificates.nuspec"
       ]
     },
-    "System.Security.Permissions/4.5.0": {
-      "sha512": "vDQ7q30Soe0a1cPhvxn+7IFmMeTG5IP+hTQrnKQDjTNpD2epqwbZSzMM2Git5TXBr4Kwwhc/0SEtJY0qPoiegA==",
+    "System.Security.Permissions/4.6.0": {
+      "sha512": "7IR8V0eTAxSV+IeRXFutzbcc3i+4smhdDsOc7R6JTJNSeNl1WYGJMKcHFWTKBP2i76IotjBh5bS1B7hVCkR+Og==",
       "type": "package",
-      "path": "system.security.permissions/4.5.0",
+      "path": "system.security.permissions/4.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net461/System.Security.Permissions.dll",
+        "lib/net461/System.Security.Permissions.xml",
+        "lib/netcoreapp3.0/System.Security.Permissions.dll",
+        "lib/netcoreapp3.0/System.Security.Permissions.xml",
         "lib/netstandard2.0/System.Security.Permissions.dll",
+        "lib/netstandard2.0/System.Security.Permissions.xml",
         "ref/net461/System.Security.Permissions.dll",
         "ref/net461/System.Security.Permissions.xml",
+        "ref/netcoreapp3.0/System.Security.Permissions.dll",
+        "ref/netcoreapp3.0/System.Security.Permissions.xml",
         "ref/netstandard2.0/System.Security.Permissions.dll",
         "ref/netstandard2.0/System.Security.Permissions.xml",
-        "system.security.permissions.4.5.0.nupkg.sha512",
+        "system.security.permissions.4.6.0.nupkg.sha512",
         "system.security.permissions.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -7044,10 +7034,10 @@
         "system.security.principal.nuspec"
       ]
     },
-    "System.Security.Principal.Windows/4.5.0": {
-      "sha512": "hs2zF4tOQ3V4iQttVnLrnR/i8AOrrAgu2Gmp4/jNaE/+5hiZWDj20FK/m/OW3Itdi9XDvqf55WzHkiWYtOSUNg==",
+    "System.Security.Principal.Windows/4.6.0": {
+      "sha512": "vFxU1zSGskh2J3pBmFWGDCN0rNOhvpBb86Tzj1CTiWNF1JDvO3skbn+87G23cOf+fWXodV/nh1fXlYuAsy/sjQ==",
       "type": "package",
-      "path": "system.security.principal.windows/4.5.0",
+      "path": "system.security.principal.windows/4.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7055,12 +7045,16 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net46/System.Security.Principal.Windows.dll",
         "lib/net461/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.xml",
         "lib/netstandard1.3/System.Security.Principal.Windows.dll",
         "lib/netstandard2.0/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.xml",
         "lib/uap10.0.16299/_._",
         "ref/net46/System.Security.Principal.Windows.dll",
         "ref/net461/System.Security.Principal.Windows.dll",
         "ref/net461/System.Security.Principal.Windows.xml",
+        "ref/netcoreapp3.0/System.Security.Principal.Windows.dll",
+        "ref/netcoreapp3.0/System.Security.Principal.Windows.xml",
         "ref/netstandard1.3/System.Security.Principal.Windows.dll",
         "ref/netstandard1.3/System.Security.Principal.Windows.xml",
         "ref/netstandard1.3/de/System.Security.Principal.Windows.xml",
@@ -7076,12 +7070,19 @@
         "ref/netstandard2.0/System.Security.Principal.Windows.xml",
         "ref/uap10.0.16299/_._",
         "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.xml",
+        "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.xml",
         "runtimes/win/lib/net46/System.Security.Principal.Windows.dll",
         "runtimes/win/lib/net461/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.xml",
         "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.xml",
         "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll",
         "runtimes/win/lib/uap10.0.16299/_._",
-        "system.security.principal.windows.4.5.0.nupkg.sha512",
+        "system.security.principal.windows.4.6.0.nupkg.sha512",
         "system.security.principal.windows.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"

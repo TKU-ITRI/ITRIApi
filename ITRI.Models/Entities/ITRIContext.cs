@@ -29,6 +29,7 @@ namespace ITRI.Models.Entities
         public virtual DbSet<Porder> Porder { get; set; }
         public virtual DbSet<PurchaseOrder> PurchaseOrder { get; set; }
         public virtual DbSet<Student> Student { get; set; }
+        public virtual DbSet<Test> Test { get; set; }
         public virtual DbSet<Toolcutter> Toolcutter { get; set; }
         public virtual DbSet<Tooljig> Tooljig { get; set; }
         public virtual DbSet<WorkOrder> WorkOrder { get; set; }
@@ -45,6 +46,7 @@ namespace ITRI.Models.Entities
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("ProductVersion", "2.2.1-servicing-10028");
+            modelBuilder.Query<Views_Table>().ToView("Views_Table");
 
             modelBuilder.Entity<Account>(entity =>
             {
@@ -560,6 +562,13 @@ namespace ITRI.Models.Entities
                     .HasDefaultValueSql("0");
 
                 entity.Property(e => e.Year).HasColumnType("int(11)");
+            });
+
+            modelBuilder.Entity<Test>(entity =>
+            {
+                entity.ToTable("test", "ITRI");
+
+                entity.Property(e => e.Id).HasColumnType("int(11)");
             });
 
             modelBuilder.Entity<Toolcutter>(entity =>

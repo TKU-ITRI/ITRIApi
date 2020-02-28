@@ -40,4 +40,3 @@ C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Models\obj\Debug\netcoreapp2.0\ITRI.
 C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Models\obj\Debug\netcoreapp2.0\ITRI.Models.AssemblyInfo.cs
 C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Models\obj\Debug\netcoreapp2.0\ITRI.Models.dll
 C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Models\obj\Debug\netcoreapp2.0\ITRI.Models.pdb
-C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Models\obj\Debug\netcoreapp2.0\ITRI.Models.csproj.CoreCompileInputs.cache
