@@ -6,7 +6,7 @@ namespace ITRI.Services.Interface
 {
     public interface IOrderoutsourceS
     {
-        DatatablesVM<Orderoutsource> GetAll(int start, int length);
+        DatatablesVM<Orderoutsource> GetAll(int start, int length, int Id);
         Orderoutsource GetById(int id);
 
         void Update(Orderoutsource data);

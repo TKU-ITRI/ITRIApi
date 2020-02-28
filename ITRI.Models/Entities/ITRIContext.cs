@@ -332,8 +332,7 @@ namespace ITRI.Models.Entities
 
                 entity.Property(e => e.OOrderImage)
                     .HasColumnName("O_order_image")
-                    .HasMaxLength(45)
-                    .IsUnicode(false);
+                    .HasColumnType("mediumblob");
 
                 entity.Property(e => e.OOrderMethod)
                     .HasColumnName("O_order_method")
@@ -374,8 +373,7 @@ namespace ITRI.Models.Entities
 
                 entity.Property(e => e.SOrderImage)
                     .HasColumnName("S_order_image")
-                    .HasMaxLength(45)
-                    .IsUnicode(false);
+                    .HasColumnType("mediumblob");
 
                 entity.Property(e => e.SOrderMachine)
                     .HasColumnName("S_order_machine")

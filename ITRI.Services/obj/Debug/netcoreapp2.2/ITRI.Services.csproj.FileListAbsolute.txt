@@ -61,3 +61,5 @@ C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Services\obj\Debug\netcoreapp2.2\ITR
 C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Services\obj\Debug\netcoreapp2.2\ITRI.Services.dll
 C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Services\obj\Debug\netcoreapp2.2\ITRI.Services.pdb
 C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Services\obj\Debug\netcoreapp2.2\ITRI.Services.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Services\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Services\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Http.Features.xml

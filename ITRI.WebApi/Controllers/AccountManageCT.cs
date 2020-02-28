@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Linq;
 
-namespace QRCode.WebAPI.Controllers
+namespace ITRI.WebAPI.Controllers
 {
     [Route("am/[action]")]
     [ApiController]

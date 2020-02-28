@@ -19,10 +19,10 @@ namespace ITRI.Services
             _jwtSettings = jwtSettings;
         }
 
-        public DatatablesVM<Orderselfmade> GetAll(int start, int length)
+        public DatatablesVM<Orderselfmade> GetAll(int start, int length,int Id)
         {
-            var count = _repository.GetAll().Count();
-            var data = _repository.GetAll().Skip(start).Take(length);
+            var count = _repository.GetAll().Where(c => c.SGonNo == Id).Count();
+            var data = _repository.GetAll().Where(c => c.SGonNo == Id).Skip(start).Take(length);
             var result = new DatatablesVM<Orderselfmade>
             {
                 recordsTotal = count,

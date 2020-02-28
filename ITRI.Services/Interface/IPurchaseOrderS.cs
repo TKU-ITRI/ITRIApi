@@ -6,7 +6,7 @@ namespace ITRI.Services.Interface
 {
     public interface IPurchaseOrderS
     {
-        DatatablesVM<PurchaseOrder> GetAll(int start, int length);
+        DatatablesVM<PurchaseOrder> GetAll(int start, int length, int Id);
         PurchaseOrder GetById(int id);
 
         void Update(PurchaseOrder data);

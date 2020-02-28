@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Linq;
 
-namespace QRCode.WebAPI.Controllers
+namespace ITRI.WebAPI.Controllers
 {
     [Route("assemblyList/[action]")]
     [ApiController]
@@ -28,8 +28,9 @@ namespace QRCode.WebAPI.Controllers
         {
             var Start = int.Parse(param["start"].ToString());
             var Length = int.Parse(param["length"].ToString());
+            var Id = int.Parse(param["id"].ToString());
 
-            var result = _assemblyListS.GetAll(Start, Length);
+            var result = _assemblyListS.GetAll(Start, Length,Id);
             return Ok(result);
         }
 

@@ -6,7 +6,7 @@ namespace ITRI.Services.Interface
 {
     public interface IOrderselfmadeS
     {
-        DatatablesVM<Orderselfmade> GetAll(int start, int length);
+        DatatablesVM<Orderselfmade> GetAll(int start, int length, int Id);
         Orderselfmade GetById(int id);
 
         void Update(Orderselfmade data);

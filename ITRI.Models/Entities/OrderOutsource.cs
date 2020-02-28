@@ -9,7 +9,7 @@ namespace ITRI.Models.Entities
         public string OOrderContractor { get; set; }
         public DateTimeOffset? OOrderPredictDate { get; set; }
         public DateTimeOffset? OOrderCompleteDate { get; set; }
-        public string OOrderImage { get; set; }
+        public byte[] OOrderImage { get; set; }
         public string OOrderSchedule { get; set; }
         public string OOrderMethod { get; set; }
         public int? OGonNo { get; set; }

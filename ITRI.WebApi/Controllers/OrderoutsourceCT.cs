@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Linq;
 
-namespace QRCode.WebAPI.Controllers
+namespace ITRI.WebAPI.Controllers
 {
     [Route("orderoutsource/[action]")]
     [ApiController]
@@ -28,8 +28,9 @@ namespace QRCode.WebAPI.Controllers
         {
             var Start = int.Parse(param["start"].ToString());
             var Length = int.Parse(param["length"].ToString());
+            var Id = int.Parse(param["id"].ToString());
 
-            var result = _orderoutsourceS.GetAll(Start, Length);
+            var result = _orderoutsourceS.GetAll(Start, Length,Id);
             return Ok(result);
         }
 
@@ -53,14 +54,19 @@ namespace QRCode.WebAPI.Controllers
 
 
         [HttpPost]
-        public IActionResult Create([FromBody]Orderoutsource param)
+        public IActionResult Create([FromBody] Orderoutsource param)
         {
 
             _orderoutsourceS.Create(param);
-            return Ok(param);
+            return Ok("success");
         }
 
+        [HttpPost]
+        public IActionResult CreateExam(ExampleContentVM e)
+        {
 
+            return Ok("success");
+        }
         [HttpPost]
         public IActionResult Delete([FromBody]JObject param)
         {

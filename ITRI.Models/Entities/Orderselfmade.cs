@@ -15,7 +15,7 @@ namespace ITRI.Models.Entities
         public int? SOrderMaterial { get; set; }
         public DateTimeOffset? SOrderPredictDate { get; set; }
         public DateTimeOffset? SOrderCompleteDate { get; set; }
-        public string SOrderImage { get; set; }
+        public byte[] SOrderImage { get; set; }
         public string SOrderSchedule { get; set; }
         public string SOrderMethod { get; set; }
         public int? SGonNo { get; set; }
