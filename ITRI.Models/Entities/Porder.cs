@@ -18,6 +18,8 @@ namespace ITRI.Models.Entities
         public DateTimeOffset? POrderCompleteDate { get; set; }
         public DateTimeOffset? CreateDate { get; set; }
         public DateTimeOffset? ModifyDate { get; set; }
+        public int? AccountId { get; set; }
+        public int? CompanyId { get; set; }
 
         public virtual ICollection<Gon> Gon { get; set; }
     }

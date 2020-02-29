@@ -26,6 +26,9 @@ namespace ITRI.Services
             var data = _repository.Query().Skip(start).Take(length).Select(c => new Views_Table()
             {
                 orderoutsource_Id = c.orderoutsource_Id,
+                client_No = c.client_No,
+                order_No = c.order_No,
+                
             });
             var result = new DatatablesVM<Views_Table>
             {
@@ -35,6 +38,7 @@ namespace ITRI.Services
             };
             return result;
         }
+   
 
     }
 }

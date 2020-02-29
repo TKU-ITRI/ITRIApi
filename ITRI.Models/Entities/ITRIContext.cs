@@ -46,7 +46,6 @@ namespace ITRI.Models.Entities
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("ProductVersion", "2.2.1-servicing-10028");
-            modelBuilder.Query<Views_Table>().ToView("Views_Table");
 
             modelBuilder.Entity<Account>(entity =>
             {
@@ -177,6 +176,10 @@ namespace ITRI.Models.Entities
 
                 entity.Property(e => e.Id).HasColumnType("int(11)");
 
+                entity.Property(e => e.AccountId).HasColumnType("int(11)");
+
+                entity.Property(e => e.CompanyId).HasColumnType("int(11)");
+
                 entity.Property(e => e.MachineBrand)
                     .HasColumnName("machine_Brand")
                     .HasMaxLength(45)
@@ -227,6 +230,10 @@ namespace ITRI.Models.Entities
 
                 entity.Property(e => e.Id).HasColumnType("int(11)");
 
+                entity.Property(e => e.AccountId).HasColumnType("int(11)");
+
+                entity.Property(e => e.CompanyId).HasColumnType("int(11)");
+
                 entity.Property(e => e.MaterialBrand)
                     .HasColumnName("Material_Brand")
                     .HasMaxLength(45)
@@ -273,6 +280,10 @@ namespace ITRI.Models.Entities
                 entity.ToTable("member", "ITRI");
 
                 entity.Property(e => e.Id).HasColumnType("int(11)");
+
+                entity.Property(e => e.AccountId).HasColumnType("int(11)");
+
+                entity.Property(e => e.CompanyId).HasColumnType("int(11)");
 
                 entity.Property(e => e.CreateDate).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
@@ -453,6 +464,10 @@ namespace ITRI.Models.Entities
 
                 entity.Property(e => e.Id).HasColumnType("int(11)");
 
+                entity.Property(e => e.AccountId).HasColumnType("int(11)");
+
+                entity.Property(e => e.CompanyId).HasColumnType("int(11)");
+
                 entity.Property(e => e.CreateDate).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
                 entity.Property(e => e.PInOrderId)
@@ -577,6 +592,10 @@ namespace ITRI.Models.Entities
 
                 entity.Property(e => e.Id).HasColumnType("int(11)");
 
+                entity.Property(e => e.AccountId).HasColumnType("int(11)");
+
+                entity.Property(e => e.CompanyId).HasColumnType("int(11)");
+
                 entity.Property(e => e.CutterBrand)
                     .HasColumnName("cutter_Brand")
                     .HasMaxLength(45)
@@ -627,6 +646,10 @@ namespace ITRI.Models.Entities
                 entity.ToTable("tooljig", "ITRI");
 
                 entity.Property(e => e.Id).HasColumnType("int(11)");
+
+                entity.Property(e => e.AccountId).HasColumnType("int(11)");
+
+                entity.Property(e => e.CompanyId).HasColumnType("int(11)");
 
                 entity.Property(e => e.JigBrand)
                     .HasColumnName("Jig_Brand")

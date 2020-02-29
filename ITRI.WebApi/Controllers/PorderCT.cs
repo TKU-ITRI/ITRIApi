@@ -28,8 +28,9 @@ namespace QRCode.WebAPI.Controllers
         {
             var Start = int.Parse(param["start"].ToString());
             var Length = int.Parse(param["length"].ToString());
+            var accountId = int.Parse(param["accountId"].ToString());
 
-            var result = _porderS.GetAll(Start, Length);
+            var result = _porderS.GetAll(Start, Length, accountId);
             return Ok(result);
         }
 
@@ -55,7 +56,6 @@ namespace QRCode.WebAPI.Controllers
         [HttpPost]
         public IActionResult Create([FromBody]Porder param)
         {
-
             _porderS.Create(param);
             return Ok(param);
         }

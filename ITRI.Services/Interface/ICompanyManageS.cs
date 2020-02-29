@@ -11,6 +11,7 @@ namespace ITRI.Services.Interface
         IEnumerable<Company> GetAllCompany();
         
         DatatablesVM<Account> GetAllAccount(int start, int length, int CompanyId);
+        DatatablesVM<Account> GetAllSAccount(int start, int length, int CompanyId);
 
         Company GetById(int id);
         void Update(Company data);

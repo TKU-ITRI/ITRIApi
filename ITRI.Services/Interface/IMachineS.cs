@@ -6,7 +6,7 @@ namespace ITRI.Services.Interface
 {
     public interface IMachineS
     {
-        DatatablesVM<Machine> GetAll(int start, int length);
+        DatatablesVM<Machine> GetAll(int start, int length, int accountId);
         Machine GetById(int id);
 
         void Update(Machine data);

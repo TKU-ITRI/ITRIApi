@@ -6,7 +6,7 @@ namespace ITRI.Services.Interface
 {
     public interface IToolJigS
     {
-        DatatablesVM<Tooljig> GetAll(int start, int length);
+        DatatablesVM<Tooljig> GetAll(int start, int length, int accountId);
         Tooljig GetById(int id);
 
         void Update(Tooljig data);

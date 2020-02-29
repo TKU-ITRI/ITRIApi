@@ -18,5 +18,7 @@ namespace ITRI.Models.Entities
         public DateTimeOffset? CutterEndingTime { get; set; }
         public DateTimeOffset? CutterTableCreateDate { get; set; }
         public DateTimeOffset? CutterTableModifyDate { get; set; }
+        public int? AccountId { get; set; }
+        public int? CompanyId { get; set; }
     }
 }

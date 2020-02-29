@@ -19,10 +19,10 @@ namespace ITRI.Services
             _jwtSettings = jwtSettings;
         }
 
-        public DatatablesVM<Machine> GetAll(int start, int length)
+        public DatatablesVM<Machine> GetAll(int start, int length, int accountId)
         {
-            var count = _repository.GetAll().Count();
-            var data = _repository.GetAll().Skip(start).Take(length);
+            var count = _repository.GetAll().Where(c => c.AccountId == accountId).Count();
+            var data  = _repository.GetAll().Where(c => c.AccountId == accountId).Skip(start).Take(length);
             var result = new DatatablesVM<Machine>
             {
                 recordsTotal = count,

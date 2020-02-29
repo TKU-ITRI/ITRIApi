@@ -18,5 +18,5 @@ C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Models\bin\Debug\netcoreapp2.2\ITRI.
 C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Models\bin\Debug\netcoreapp2.2\ITRI.Models.runtimeconfig.dev.json
 C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Models\bin\Debug\netcoreapp2.2\ITRI.Models.dll
 C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Models\bin\Debug\netcoreapp2.2\ITRI.Models.pdb
-C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Models\obj\Debug\netcoreapp2.2\ITRI.Models.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Models\obj\Debug\netcoreapp2.2\ITRI.Models.csprojAssemblyReference.cache
+C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Models\obj\Debug\netcoreapp2.2\ITRI.Models.csproj.CoreCompileInputs.cache
