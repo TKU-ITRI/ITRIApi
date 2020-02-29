@@ -46,7 +46,6 @@ namespace ITRI.Models.Entities
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("ProductVersion", "2.2.1-servicing-10028");
-            modelBuilder.Query<Views_Table>().ToView("Views_Table");
 
             modelBuilder.Entity<Account>(entity =>
             {
