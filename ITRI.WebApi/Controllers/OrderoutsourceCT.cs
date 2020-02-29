@@ -61,12 +61,7 @@ namespace ITRI.WebAPI.Controllers
             return Ok("success");
         }
 
-        [HttpPost]
-        public IActionResult CreateExam(ExampleContentVM e)
-        {
-
-            return Ok("success");
-        }
+      
         [HttpPost]
         public IActionResult Delete([FromBody]JObject param)
         {
