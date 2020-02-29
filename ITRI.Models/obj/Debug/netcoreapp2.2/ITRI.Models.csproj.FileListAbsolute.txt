@@ -18,8 +18,8 @@ C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Models\bin\Debug\netcoreapp2.2\ITRI.
 C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Models\bin\Debug\netcoreapp2.2\ITRI.Models.runtimeconfig.dev.json
 C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Models\bin\Debug\netcoreapp2.2\ITRI.Models.dll
 C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Models\bin\Debug\netcoreapp2.2\ITRI.Models.pdb
-C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Models\obj\Debug\netcoreapp2.2\ITRI.Models.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Models\obj\Debug\netcoreapp2.2\ITRI.Models.csprojAssemblyReference.cache
+<<<<<<< HEAD
 D:\ITRI\ITRIApi\ITRI.Models\bin\Debug\netcoreapp2.2\ITRI.Models.deps.json
 D:\ITRI\ITRIApi\ITRI.Models\bin\Debug\netcoreapp2.2\ITRI.Models.runtimeconfig.json
 D:\ITRI\ITRIApi\ITRI.Models\bin\Debug\netcoreapp2.2\ITRI.Models.runtimeconfig.dev.json
@@ -31,3 +31,6 @@ D:\ITRI\ITRIApi\ITRI.Models\obj\Debug\netcoreapp2.2\ITRI.Models.AssemblyInfoInpu
 D:\ITRI\ITRIApi\ITRI.Models\obj\Debug\netcoreapp2.2\ITRI.Models.AssemblyInfo.cs
 D:\ITRI\ITRIApi\ITRI.Models\obj\Debug\netcoreapp2.2\ITRI.Models.dll
 D:\ITRI\ITRIApi\ITRI.Models\obj\Debug\netcoreapp2.2\ITRI.Models.pdb
+=======
+C:\Users\user\Desktop\MES\ITRI\ITRIApi\ITRI.Models\obj\Debug\netcoreapp2.2\ITRI.Models.csproj.CoreCompileInputs.cache
+>>>>>>> 888fffea65d99a35b2f4f00ade0b0f8feeba9652

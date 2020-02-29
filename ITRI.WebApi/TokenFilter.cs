@@ -15,6 +15,8 @@ namespace ITRI.WebAPI
         private readonly JWTSettings _jwtSettings;
         private readonly string[] _isAnonymous = {
             "/account/login",
+            "/account/memberlogin",
+
             //"/sign/accountlogin",
             //"/sign/memberlogin"
         };

@@ -6,6 +6,7 @@ using ITRI.Models.Interface;
 using ITRI.Services.Interface;
 using ITRI.ViewModels;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace ITRI.Services
 {
@@ -19,16 +20,23 @@ namespace ITRI.Services
             _jwtSettings = jwtSettings;
         }
 
-        public DatatablesVM<Member> GetAll(int start, int length)
+        public DatatablesVM<Member> GetAll(int start, int length, int accountId)
         {
-            var count = _repository.GetAll().Count();
-            var data = _repository.GetAll().Skip(start).Take(length);
+            var count = _repository.GetAll().Where(c => c.AccountId == accountId).Count();
+            var data = _repository.GetAll().Where(c => c.AccountId == accountId).Skip(start).Take(length);
             var result = new DatatablesVM<Member>
             {
                 recordsTotal = count,
                 recordsFiltered = count,
                 data = data,
             };
+            return result;
+        }
+
+        public IEnumerable<Member> GetAllList(int accountId)
+        {
+            var result = _repository.GetAll().Where(c=>c.AccountId == accountId);
+          
             return result;
         }
 

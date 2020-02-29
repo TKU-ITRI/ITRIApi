@@ -15,5 +15,7 @@ namespace ITRI.Models.Entities
         public int? MemberTransferMemberId { get; set; }
         public DateTimeOffset? CreateDate { get; set; }
         public DateTimeOffset? ModifyDate { get; set; }
+        public int? AccountId { get; set; }
+        public int? CompanyId { get; set; }
     }
 }

@@ -16,5 +16,7 @@ namespace ITRI.Models.Entities
         public DateTimeOffset? MachineEndingTime { get; set; }
         public DateTimeOffset? MachineTableCreateDate { get; set; }
         public DateTimeOffset? MachineTableModifyDate { get; set; }
+        public int? AccountId { get; set; }
+        public int? CompanyId { get; set; }
     }
 }

@@ -51,6 +51,19 @@ namespace ITRI.Services
             };
             return result;
         }
+
+        public DatatablesVM<Account> GetAllSAccount(int start, int length, int CompanyId)
+        {
+            var count = _account.GetAll().Where(c => c.CompanyId == CompanyId && c.Type == "S").Count();
+            var data = _account.GetAll().Where(c => c.CompanyId == CompanyId && c.Type == "S").Skip(start).Take(length);
+            var result = new DatatablesVM<Account>
+            {
+                recordsTotal = count,
+                recordsFiltered = count,
+                data = data,
+            };
+            return result;
+        }
         public Company GetById(int id)
         {
             var company = _repository.Get(c => c.Id == id);

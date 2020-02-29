@@ -19,5 +19,7 @@ namespace ITRI.Models.Entities
         public DateTimeOffset? JigTableCreateDate { get; set; }
         public DateTimeOffset? JigTableModifyDate { get; set; }
         public string JigUse { get; set; }
+        public int? AccountId { get; set; }
+        public int? CompanyId { get; set; }
     }
 }

@@ -24,6 +24,7 @@ namespace ITRI.Services
         public DatatablesVM<ViewsTableVM> GetAll(int start, int length)
         {
             var count = _repository.Query().Count();
+<<<<<<< HEAD
             
             var datal = _repository.Query().Skip(start).Take(length);
             var ViewList = new List<ViewsTableVM>();
@@ -81,15 +82,31 @@ namespace ITRI.Services
             }
             
             var result = new DatatablesVM<ViewsTableVM>
+=======
+            var data1 = _repository.Query().Skip(start).Take(length);
+            var ViewList = new List<Views_Table>();
+            foreach(var d in data1)
+            {
+                var v = new Views_Table();
+                v.gonid = d.gonid;
+                ViewList.Add(v);
+            }
+            
+            var result = new DatatablesVM<Views_Table>
+>>>>>>> 888fffea65d99a35b2f4f00ade0b0f8feeba9652
             {
                 recordsTotal = count,
                 recordsFiltered = count,
                 data = ViewList,
+<<<<<<< HEAD
 
+=======
+>>>>>>> 888fffea65d99a35b2f4f00ade0b0f8feeba9652
             };
            
             return result;
         }
+   
 
     }
 }

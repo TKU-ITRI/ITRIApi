@@ -42,14 +42,23 @@ namespace QRCode.WebAPI.Controllers
             var result = _CompanyManageService.GetAllAccount(Start, Length, CompanyId);
             return Ok(result);
         }
+        [HttpPost]
+        public IActionResult GetAllSAccount([FromBody]JObject param)
+        {
+            var Start = int.Parse(param["start"].ToString());
+            var Length = int.Parse(param["length"].ToString());
+            var CompanyId = int.Parse(param["companyId"].ToString());
 
+            var result = _CompanyManageService.GetAllSAccount(Start, Length, CompanyId);
+            return Ok(result);
+        }
         [HttpGet]
         public IActionResult GetAllCompany()
         {
             var result = _CompanyManageService.GetAllCompany();
             return Ok(result);
         }
-
+    
         [HttpPost]
         public IActionResult GetById([FromBody]JObject param)
         {

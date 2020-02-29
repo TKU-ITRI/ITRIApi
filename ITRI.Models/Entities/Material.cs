@@ -17,5 +17,7 @@ namespace ITRI.Models.Entities
         public byte? MaterialStatus { get; set; }
         public DateTimeOffset? MaterialTableCreateDate { get; set; }
         public DateTimeOffset? MaterialTableModifyDate { get; set; }
+        public int? AccountId { get; set; }
+        public int? CompanyId { get; set; }
     }
 }

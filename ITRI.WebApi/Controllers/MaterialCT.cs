@@ -28,8 +28,8 @@ namespace QRCode.WebAPI.Controllers
         {
             var Start = int.Parse(param["start"].ToString());
             var Length = int.Parse(param["length"].ToString());
-
-            var result = _materialS.GetAll(Start, Length);
+            var accountId = int.Parse(param["accountId"].ToString());
+            var result = _materialS.GetAll(Start, Length, accountId);
             return Ok(result);
         }
 

@@ -28,8 +28,9 @@ namespace QRCode.WebAPI.Controllers
         {
             var Start = int.Parse(param["start"].ToString());
             var Length = int.Parse(param["length"].ToString());
+            var AccountId = int.Parse(param["accountId"].ToString());
 
-            var result = _machineS.GetAll(Start, Length);
+            var result = _machineS.GetAll(Start, Length, AccountId);
             return Ok(result);
         }
 
