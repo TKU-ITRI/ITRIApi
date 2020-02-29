@@ -23,18 +23,20 @@ namespace ITRI.Services
         public DatatablesVM<Views_Table> GetAll(int start, int length)
         {
             var count = _repository.Query().Count();
-            var data = _repository.Query().Skip(start).Take(length).Select(c => new Views_Table()
+            var data1 = _repository.Query().Skip(start).Take(length);
+            var ViewList = new List<Views_Table>();
+            foreach(var d in data1)
             {
-                orderoutsource_Id = c.orderoutsource_Id,
-                client_No = c.client_No,
-                order_No = c.order_No,
-                
-            });
+                var v = new Views_Table();
+                v.gonid = d.gonid;
+                ViewList.Append(v);
+            }
+            
             var result = new DatatablesVM<Views_Table>
             {
                 recordsTotal = count,
                 recordsFiltered = count,
-                data = data,
+                data = ViewList,
             };
             return result;
         }

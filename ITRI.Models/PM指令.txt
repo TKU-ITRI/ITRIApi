@@ -1,1 +1,3 @@
 dotnet ef dbcontext scaffold "server=itri.caxkojlfld6f.us-east-1.rds.amazonaws.com;port=3306;user=admin;password=Tku8833122;database=ITRI" MySql.Data.EntityFrameworkCore -o Entities -f
+
+modelBuilder.Query<Views_Table>().ToView("Views_Table");
