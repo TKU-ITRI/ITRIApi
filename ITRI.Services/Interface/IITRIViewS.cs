@@ -7,7 +7,7 @@ namespace ITRI.Services.Interface
 {
     public interface IITRIViewS
     {
-        DatatablesVM<Views_Table> GetAll(int start, int length);
+        DatatablesVM<ViewsTableVM> GetAll(int start, int length);
        
     }
 }
