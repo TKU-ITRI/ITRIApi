@@ -12,6 +12,7 @@ namespace ITRI.Services
     {
         private readonly JWTSettings _jwtSettings;
         private readonly IRepository<Account> _repository = new Repository<Account>();
+        private readonly IRepository<Member> _member = new Repository<Member>();
 
         public AccountService(JWTSettings jwtSettings)
         {
@@ -35,5 +36,11 @@ namespace ITRI.Services
             return data;
         }
 
+        public Member MemberLogin(string MemberName)
+        {
+            var data = _member.Get(c => c.MemberName == MemberName);
+            if (data == null) return null;
+            return data;
+        }
     }
 }

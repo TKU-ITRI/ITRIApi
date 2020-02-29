@@ -8,6 +8,7 @@ namespace ITRI.Services.Interface
 
         Account GetById(int id);
         Account Login(string username, string password);
+        Member MemberLogin(string memberName);
 
     }
 }

@@ -35,6 +35,10 @@ namespace ITRI.WebAPI.Controllers
             return Ok(result);
         }
 
-
+        public IActionResult memberLogin([FromBody]JObject param)
+        {
+            var result = _accountService.MemberLogin(param["memberName"].ToString());
+            return Ok(result);
+        }
     }
 }

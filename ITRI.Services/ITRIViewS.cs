@@ -29,7 +29,7 @@ namespace ITRI.Services
             {
                 var v = new Views_Table();
                 v.gonid = d.gonid;
-                ViewList.Append(v);
+                ViewList.Add(v);
             }
             
             var result = new DatatablesVM<Views_Table>
